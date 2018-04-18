@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <!-- Archivos css de todas las paginas -->
+        <ui:include src="/WEB-INF/template/archivoscss.xhtml"/>
+        <!-- Fin archivos css de todas las paginass -->
+    </h:head>
+
+    <h:body class="fondo">
+        <header class="fondos pt-3">
+            <ui:insert name="contenido">
+                Agregue su contenido aca 
+            </ui:insert>
+        </header>
+        <!-- Inicio archivos js -->
+        <ui:include src="/WEB-INF/template/archivosjs.xhtml"/>
+        <!-- Fin archivos js -->
+        <!-- Inicio archivos js personalizado -->
+        <ui:insert name="scripts-pagina">
+            Agregue su contenido js propio de la pagina aca
+        </ui:insert>
+        <!-- Fin archivos js personalizado -->
+
+    </h:body>
+
+</ui:composition>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./WEB-INF/template/inicioSesion-template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="titulo">
+        Inicio Sesión
+    </ui:define>
+
+    <ui:define name="estilos">
+        <link rel="stylesheet" type="text/css" href="resources/css/ejercicioform.css"/>
+    </ui:define>
+
+    <ui:define name="contenido">
+        <div class="container pb-4">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col">
+                    <h1>Pig Breeding <img class="logo" src="resources/img/logo.png" align="left"/></h1>
+                    <h2 class="texto1 text-left">Control-Orden-Calidad</h2>
+                </div>
+                <div class="formulario col col-sm-4 col-md-5 col-lg-5 col-xl-5">
+                    <form id="formlogin" name="formlogin" action="" method="post" accept-charset="utf-8" autocomplete="on">
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label><a class="decoracion" href="Index.html"><span class="icon1 icon-reply-all pt-2"></span></a>
+                            <input class="form-control" type="email" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="email@gmail.com" required="" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" tabindex="1"/>	
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input class="form-control" type="password" id="password" name="password" placeholder="Ingrese su contraseña" required="" minlength="4" maxlength="10" tabindex="2"/>	
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn btn-dark" tabindex="3" onclick="EnviarUsuario()">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+    <ui:define name="scripts-pagina">
+        <script src="resources/js/ejercicio.js"></script>
+    </ui:define>
+
+</ui:composition>

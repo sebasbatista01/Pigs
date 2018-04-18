@@ -1,0 +1,20 @@
+/*.row{
+	background-color: blue;
+}*/
+.papa{
+	background-color: red;
+}
+h1{
+	color: black;
+}
+.col{
+	background-image: url(../Images/intermedio.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: top;
+	border: 1px solid black;
+	border-radius: 15px 15px 15px 15px;
+}
+.hola{
+	color: #fff;
+}

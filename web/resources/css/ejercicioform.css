@@ -1,0 +1,90 @@
+@font-face{
+	font-family: "diego";
+	src: url(../font/Work_Sans/WorkSans-Regular.ttf);
+}
+@font-face{
+	font-family: "jenny";
+	src:url(../font/Playball/Playball-Regular.ttf);
+}
+@font-face{
+	font-family: "tania";
+	src:url(../font/Work_Sans/WorkSans-ExtraLight.ttf);
+}
+.fondo{
+	background-image: url(../img/portada.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: top;
+}
+.fondos{
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	padding-top: 800px;
+	height: 700px;
+}
+.row{
+	padding-top: 150px;
+	margin-left: 0px;
+}
+h1{
+	font-family: "jenny";
+	font-size: 55px;
+}
+.texto1{
+	font-family: "tania";
+	font-size: 23px;
+	padding-left: 60px;
+}
+.formulario{
+	background: rgba(0,0,0,.5);
+	width: 500px;
+/*	border: 1px solid black;*/
+	border-radius: 5px 5px 5px 5px;
+}
+.icono{
+	color: #FF6800;
+}
+.tit{
+	color: #FF6800;
+}
+.titulo{
+	/*color: #FAFA35;*/
+}
+/*.descripcion{
+	color: red;	
+}*/
+/*.btn{
+	width: 90%;
+}*/
+.form-group{
+	margin-top: 20px;
+	font-weight: bold;
+	color: #fff;
+	font-family: "tania";
+	font-size: 28px;
+}
+.form-control{
+	font-family: "diego";
+}
+.btn{
+	font-family: "tania";
+	width: 100px;
+	border-radius: 20px 20px;
+	margin-bottom: 15px;
+}
+.icon1{
+	color: #fff;
+	font-size: 45px;
+	padding-left: 200px;
+}
+.icon1:hover{
+	color: #F5B7B1;
+	transition: 1s;
+}
+a.decoracion{
+	text-decoration: none;
+}
+.logo{
+	height:50px; 
+	width: 70px;	
+}

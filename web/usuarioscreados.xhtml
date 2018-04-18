@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./WEB-INF/template/main-template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+    <ui:define name="titulo">
+        Lista Usuarios
+    </ui:define>
+
+    <ui:define name="estilos">
+        <link rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/buttons.dataTables.min.css"/>
+    </ui:define>
+
+    <ui:define name="contenido">
+        <div class="tabla col-xs-1 col-sm-12 col-md-9 col-lg-10 col">         
+            <h:dataTable id="ejemplo" class="table table-responsive table table-striped table-condensed table-hover table-bordered" var="uff" value="#{usuarios.usersillos}" >
+                <h2 class="nombre">Usuarios creados</h2>
+                <f:facet name="header">
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                        <th>Correo</th>
+                        <th>Cedula</th>
+                        <th>Fecha nacimiento</th>
+                        <th>Opciones</th> 
+                    </tr>
+                </f:facet>
+                <h:column headerClass="nombre">
+                    <h:outputText value="#{uff.nombre}"/>
+                </h:column>
+                <h:column headerClass="contraseña">
+                    <h:outputText value="#{uff.contraseña}"/>
+                </h:column>
+                <h:column headerClass="correo">
+                    <h:outputText value="#{uff.correo}"/>
+                </h:column>
+                <h:column headerClass="idUsuario">
+                    <h:outputText value="#{uff.idUsuario}"/>
+                </h:column>
+                <h:column headerClass="fecha">
+                    <h:outputText value="#{uff.fechaNacimiento}"/>
+                </h:column>
+                <h:column headerClass="opciones">
+                    <h:commandButton class="btn btn-danger delete" action="#{usuarios.quitar()}">
+                        <span class=" icon-remove-user" >
+                        </span></h:commandButton>
+                </h:column>
+                <tbody id="tbody">
+                    <tr>
+                        <td>Anna</td>
+                        <td>1234</td>
+                        <td>anna@gmail.com</td>
+                        <td>1348746583</td>
+                        <td>1994-07-19</td>
+                        <td class="text-center">
+                            <button class="btn btn-danger delete"><span class=" icon-remove-user" >
+                                </span></button>
+                            <button class="btn btn-success edit"><span class="iconoborrar icon-new-message" >
+                                </span></button>
+                        </td>
+                    </tr>
+                    <td class="text-center">
+                        <button class="btn btn-danger delete"><span class=" icon-remove-user" >
+                            </span></button>
+                        <button class="btn btn-success edit"><span class="iconoborrar icon-new-message" >
+                            </span></button>
+                    </td>
+                </tbody>
+            </h:dataTable>
+
+            <div class="d-flex justify-content-center pt-1">
+                <a href="indexoficiales.html"><button type="button" class="btn btn-primary" href="indexoficial.html">Regresar</button></a>
+            </div>
+        </div>
+    </ui:define>
+
+    <ui:define name="scripts-pagina">
+        <script src="resources/js/usuariosC.js"/>
+    </ui:define>
+
+</ui:composition>

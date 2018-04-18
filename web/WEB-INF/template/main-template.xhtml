@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <!-- Archivos css de todas las paginas -->
+        <ui:include src="/WEB-INF/template/archivoscss.xhtml"/>
+        <!-- Fin archivos css de todas las paginass -->
+    </h:head>
+    <h:body>
+        <!-- Inicio navbar -->
+        <ui:include src="/WEB-INF/template/navbar.xhtml"/>
+        <!-- Fin navbar -->
+        <div class="row img">
+            <!-- Inicio sidebar -->
+            <ui:include src="/WEB-INF/template/sidebar.xhtml"/>
+            <!-- Fin navbar -->
+            <!-- Inicio contenido -->
+            <ui:insert name="contenido">
+
+            </ui:insert>
+            <!-- Fin contenido -->
+        </div>
+
+        <ui:include src="/WEB-INF/template/archivosjs.xhtml"/>
+        <!-- Inicio Script personalizado -->
+        <ui:insert name="scripts-pagina">
+            
+        </ui:insert>
+        <!-- Fin Script personalizado -->
+    </h:body>
+
+</ui:composition>

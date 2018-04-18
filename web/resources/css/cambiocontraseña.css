@@ -1,0 +1,194 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Coming Soon', cursive;*/
+@font-face{
+	font-family: "jenny";
+	src:url(../font/Playball/Playball-Regular.ttf);
+}
+@font-face{
+	font-family: "tania";
+	src:url(../font/Work_Sans/WorkSans-ExtraLight.ttf);
+}
+@font-face{
+	font-family: "diego";
+	src: url(../font/Work_Sans/WorkSans-Regular.ttf);
+}
+.papa{
+	width: 100%;
+	padding: 0;
+}
+.img{
+	background-image: url(../img/fondocerdos.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: top;
+}
+.row{
+	padding: 0;
+	margin: 0;
+}
+h2.prueba.navbar-brand{
+	color: #fff;
+	margin-left: 50px;
+	font-family: "jenny";
+	font-size: 25px;
+}
+.navbar-dark .navbar-brand{
+	/*font-family: "tania";*/
+	/*font-size: 35px;*/
+	width: 100%;
+}
+.navbar-primary .navbar-brand{
+	/*font-family: "tania";*/
+	/*font-size: 35px;*/
+	width: 100%;
+}
+h2.centrado.navbar-brand{
+	color: #fff;
+	font-family: "jenny";
+	/*padding-left: 100px;*/
+	font-size: 25px;
+	margin-right: 0;
+}
+.imagen{
+	padding-left: 250px;
+	height: 30px;
+}
+.navbar-nav{
+	margin-left: 280px;
+}
+.navbar-collapse{
+	align-items: flex-start; 
+}
+.icon{
+	color: #fff;
+	padding-right: 5px;
+}
+.slidebar{ 
+	height:629px;
+	font-family: "tania";
+	color: #fff;
+	padding-right: 0;
+	margin: 0;
+	padding-left: 0;
+}
+.slidebar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: auto;
+}
+/*.slidebar li{
+	outline: 0.5px solid black;
+}*/
+.slidebar li:hover{
+	background: #444;
+	border-left: 5px solid #FAA;
+}
+.slidebar a{
+	color: #fff;
+	text-decoration: none;
+	padding: 25px;
+	display: flex;
+}
+a.ejercicio{
+	padding-bottom: 24px;
+}
+.tabla{
+	background: rgba(0,0,0,.5);
+	padding-bottom: 63px;
+}
+.iniciar{
+	width: 60%;
+	height: 530px;
+	background-color: rgba(0,0,0,.5);
+	padding: 1px;
+	flex-wrap: wrap;
+}
+.titulomenu{
+	color: #fff;
+	font-family: "tania";
+}
+.icon1{
+	color: #fff;
+	font-size: 45px;
+	padding-left: 100px;
+}
+.icon1:hover{
+	color: #F5B7B1;
+	transition: 1s;
+}
+.form-group{
+	color: #fff;
+	font-family: "diego";
+	font-size: 20px;
+	margin-bottom: 5px;
+	/*padding-left: 40px;*/
+}
+label.control-label{
+	font-family: "tania";
+	font-size: 20px;
+}
+.elige2{
+	font-family: "tania";
+	font-size: 20px;
+}
+.icon1{
+	color: #fff;
+	font-size: 45px;
+}
+.icon1:hover{
+	color: #F5B7B1;
+	transition: 1s;
+}
+a.decoracion{
+	text-decoration: none;
+}
+a.decoracion2{
+	text-decoration: none;
+}
+.navbar1{
+	padding-left: 0;
+	padding-right: 0;
+}
+button.navbar-toggler.navbar-toggler-right{
+	margin-left: 20px;
+}
+#wrapper {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(0,0,0,.5);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+label {
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+input {
+  border: 2px solid #CCC !important;
+  height: 35px;
+  border-radius: 3px;
+  max-width: 100%;
+}
+
+.input-group-addon {
+  border: 2px solid #CCC !important;
+  border-right: 0px !important;
+}
+span.input-group-addon{
+  background-color: #DEA5A4;
+}
+
+.btn {
+  border: 0;
+  border-radius: 20px 20px;
+  margin-top: 20px;
+  font-family: "tania";
+  font-size: 20px;
+  width: 130px;
+  /*margin-left: 40px;*/
+}
